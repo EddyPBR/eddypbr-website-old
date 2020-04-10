@@ -47,10 +47,12 @@ I've been studying and developing several projects in frontend and elaborating i
  + [ ] Search and Fixes bugs
  + [ ] Deploy with Netlify
  + [ ] end? NEVER
+<br />
 
 ##   :memo: License
 
 this project is under mit [MIT license ](LICENSE) for more details
+<br />
 <br />
 
 ## :wave: Social
