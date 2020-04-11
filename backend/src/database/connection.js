@@ -5,8 +5,10 @@ const database = 'eddyPBR-website';
 
 mongoose.connect(`mongodb://${server}/${database}`, {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useFindAndModify: false
 });
+mongoose.set('useCreateIndex', true);
 
 mongoose.Promise = global.Promise;
 
