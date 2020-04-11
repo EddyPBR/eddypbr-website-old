@@ -1,12 +1,10 @@
 const express = require("express");
 
+const PostController = require('./controllers/PostController');
+
 const routes = express.Router();
 
-routes.get('/test', (request, response) => {
-    return response.json({
-        message: 'hello server!',
-        autor: 'EddyPBR'
-    });
-});
+routes.get('/posts', PostController.index);
+routes.post('/posts', PostController.create);
 
 module.exports = routes;
