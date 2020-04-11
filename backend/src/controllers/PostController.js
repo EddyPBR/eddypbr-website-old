@@ -1,19 +1,13 @@
+const Post = require('../models/Post');
+
 module.exports = {
-  index (request, response) {
-    const posts = [{
-      title: "Example title",
-      author: "Edvaldo Junior",
-      description: "Awesome description here :)"
-    }, {
-      title: "Example title",
-      author: "Edvaldo Junior",
-      description: "Awesome description here :)"
-    }];
-    
-    return response.json(posts);
+  async index (request, response) {
+    const post = await Post.find();
+    return response.json(post);
   },
 
-  create (request, response) {
-    return response.json(request.body)
+  async create (request, response) {
+    const post = await Post.create(request.body);
+    return response.send({ post });
   }
 }
