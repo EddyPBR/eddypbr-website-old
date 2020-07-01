@@ -28,7 +28,7 @@ I've been studying and developing several projects in frontend and elaborating i
 
  + [x] Prepare the project
  + [ ] Backend
-	 + [ ] Prepare the backend
+	 + [x] Prepare the backend
 	 + [ ] Develop the api
 	 + [ ] Create and configure the database
 	 + [ ] Do tests
