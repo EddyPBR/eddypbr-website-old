@@ -1,5 +1,6 @@
 <br />
-<h1 align="center"> Hello World i am EddyPBR </h1>
+<h3 align="center">:wave: Hello World</p>
+<h1 align="center"> I'm EddyPBR :smile:</h1>
 
 This is my website/blog project to promote my work, write reviews, offer tips and demonstrate the results of some studies, follow me there and we will evolve together!
 <br />
@@ -14,6 +15,7 @@ this project is still under development but i am looking forward to finishing it
 - [MongoDB](https://www.mongodb.com/)
 - [Sass](https://sass-lang.com/)
 - [Netlify](https://www.netlify.com/)
+- [Umbler](https://www.umbler.com/br)
 - [Express](https://expressjs.com/pt-br/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
@@ -29,12 +31,14 @@ I've been studying and developing several projects in frontend and elaborating i
  + [x] Prepare the project
  + [ ] Backend
 	 + [x] Prepare the backend
-	 + [ ] Develop the api
-	 + [ ] Create and configure the database
+	 + [ ] Define routes
+	 + [ ] Create models
+	 + [ ] Set json for tests with insomnia
 	 + [ ] Do tests
  + [ ] Frontend
 	 + [ ] Install react-app
 	 + [ ] Prepare the Assets
+	 + [ ] Prepare the routes
 	 + [ ] Create the pages
 		 + [ ] Home
 		 + [ ] About
@@ -46,6 +50,7 @@ I've been studying and developing several projects in frontend and elaborating i
  + [ ] Security Tests
  + [ ] Search and Fixes bugs
  + [ ] Deploy with Netlify
+ + [ ] Host API with Umbler
  + [ ] end? NEVER
 <br />
 
