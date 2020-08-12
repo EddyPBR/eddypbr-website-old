@@ -7,13 +7,13 @@ module.exports = {
   },
 
   async create (request, response) {
-    const project = await Post.create(request.body);
+    const project = await Project.create(request.body);
     return response.send({ project });
   },
 
   async delete (request, response) {
     const { id } = request.params;
-    const project = await Post.findByIdAndRemove(id);
+    const project = await Project.findByIdAndRemove(id);
     return response.json(project);
   },
 
@@ -21,7 +21,7 @@ module.exports = {
     const { id } = request.params;
     const { title, text, link, img_url } = request.body;
 
-    const project = await Post.findByIdAndUpdate(id, {
+    const project = await Project.findByIdAndUpdate(id, {
       title, 
       text, 
       link, 
