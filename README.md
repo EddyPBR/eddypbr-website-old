@@ -30,18 +30,18 @@ I've been studying and developing several projects in frontend and elaborating i
 
  + [x] Prepare the project
  + [ ] Backend
-	 + [x] Prepare the backend
-	 + [ ] Define routes
-	 + [ ] Create models
-     + [x] Post model
-     + [x] Project model
-     + [ ] Portfolio model
-   + [ ] Create controllers
+     + [x] Prepare the backend
+     + [x] Define routes
+     + [x] Create models
+    	 + [x] Post model
+    	 + [x] Project model
+    	 + [x] Portfolio model
+   + [x] Create controllers
      + [x] Post controller
      + [x] Project controller
-     + [ ] Portfolio controller
-	 + [ ] Set json for tests with insomnia
-	 + [ ] Do tests
+     + [x] Portfolio controller
+   + [ ] Set json for tests with insomnia
+   + [ ] Do tests
  + [ ] Frontend
 	 + [ ] Install react-app
 	 + [ ] Prepare the Assets
