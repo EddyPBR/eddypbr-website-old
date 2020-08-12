@@ -33,6 +33,13 @@ I've been studying and developing several projects in frontend and elaborating i
 	 + [x] Prepare the backend
 	 + [ ] Define routes
 	 + [ ] Create models
+     + [x] Post model
+     + [x] Project model
+     + [ ] Portfolio model
+   + [ ] Create controllers
+     + [x] Post controller
+     + [x] Project controller
+     + [ ] Portfolio controller
 	 + [ ] Set json for tests with insomnia
 	 + [ ] Do tests
  + [ ] Frontend
