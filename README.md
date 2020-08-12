@@ -40,7 +40,7 @@ I've been studying and developing several projects in frontend and elaborating i
      + [x] Post controller
      + [x] Project controller
      + [x] Portfolio controller
-   + [ ] Set json for tests with insomnia
+   + [x] Set json for tests with insomnia
    + [ ] Do tests
  + [ ] Frontend
 	 + [ ] Install react-app
