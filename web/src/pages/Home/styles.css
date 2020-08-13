@@ -1,3 +1,76 @@
-h1 {
-  color: var(--color-purple);
+#introduction {
+  width: 100vw;
+  min-height: 72.0rem;
+  background: linear-gradient(rgba(7, 2, 29, .4), rgba(7, 2, 29, .6)), url("../../assets/images/unknow-planet-illustration.jpg"), no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+}
+
+#introduction .container {
+  opacity: 100%;
+  justify-content: flex-start;
+  margin-top: 120px;
+}
+
+#introduction img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  opacity: .9;
+}
+
+#introduction h1 {
+  margin-top: 3.6rem;
+  font: 3.2rem "Roboto" bold;
+  color: var(--color-grey-light);
+}
+
+#introduction h2 {
+  margin-top: 1.5rem;
+  font: 2.4rem "Roboto";
+  color: var(--color-grey);
+}
+
+#introduction ul {
+  margin-top: 4.8rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#introduction ul li {
+  margin: 0 1.5rem;
+  list-style: none;
+}
+
+#introduction ul li a {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-purple-dark);
+  padding: 0 0.6rem;
+  text-decoration: none;
+  color: var(--color-purple-dark);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#introduction ul li a:hover {
+  color: var(--color-grey-light);
+  background-color: var(--color-purple-dark);
+}
+
+#introduction ul li a svg {
+  width: 2.5rem;
+  height: 2.5rem;
 }

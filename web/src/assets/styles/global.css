@@ -32,22 +32,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 body,
 input, 
 button,
 textarea {
-  font: 500 1.8rem "Roboto", sans-serif;
+  font: 400 1.8rem "Roboto", sans-serif;
   color: var(--color-grey-light);
 }
 
 p {
-  font: 500 1.8rem "Open Sans", sans-serif;
+  font: 400 1.8rem "Open Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 90vw;
   max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 700px) {
