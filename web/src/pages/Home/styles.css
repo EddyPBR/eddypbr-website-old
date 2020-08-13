@@ -1,5 +1,5 @@
 #introduction {
-  width: 100vw;
+  width: 100%;
   min-height: 72.0rem;
   background: linear-gradient(rgba(7, 2, 29, .4), rgba(7, 2, 29, .6)), url("../../assets/images/unknow-planet-illustration.jpg"), no-repeat;
   background-position: center;
@@ -52,10 +52,10 @@
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  border: 2px solid var(--color-purple-dark);
+  border: 2px solid var(--color-purple);
   padding: 0 0.6rem;
   text-decoration: none;
-  color: var(--color-purple-dark);
+  color: var(--color-purple);
 
   display: flex;
   flex-direction: row;
@@ -67,10 +67,68 @@
 
 #introduction ul li a:hover {
   color: var(--color-grey-light);
-  background-color: var(--color-purple-dark);
+  background-color: var(--color-purple);
 }
 
 #introduction ul li a svg {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+#eddyPBR {
+  margin-top: 10.6rem;
+}
+
+#eddyPBR > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#eddyPBR > div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#eddyPBR > div div:first-child {
+  margin-right: 30px;
+}
+
+#eddyPBR > div div:last-child {
+  margin-left: 30px;
+}
+
+#eddyPBR > div div img {
+  width: 100%;
+}
+
+#eddyPBR > div div h1 {
+  color: var(--color-purple);
+}
+
+#eddyPBR > div div p {
+  margin-top: 2rem;
+}
+
+#eddyPBR > div div .button {
+  margin-top: 5rem;
+}
+
+@media (max-width: 1170px) {
+  #eddyPBR {
+    margin-top: 8rem;
+  }
+
+  #eddyPBR > div {
+    display: flex;
+  }
+
+  #eddyPBR > div div h1 {
+    margin-top: 8rem;
+  }
+
+  #eddyPBR > div div img {
+    width: 100%;
+    max-width: 600px;
+  }
 }

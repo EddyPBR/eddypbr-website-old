@@ -1,7 +1,7 @@
 :root {
   --color-background: #07021D;
-  --color-purple: #6D2AC6;
-  --color-purple-dark: #8A5AC9;
+  --color-purple-dark: #6D2AC6;
+  --color-purple: #8A5AC9;
   --color-aquagreen: #1FF7D0;
   --color-blue: #0BC4FF;
   --color-green: #58DF75;
@@ -42,6 +42,8 @@ textarea {
 
 p {
   font: 400 1.8rem "Open Sans", sans-serif;
+  line-height: 3.2rem;
+  color: var(--color-grey);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,6 +57,47 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 1170px) {
+  .container {
+    width: 90vw;
+    max-width: 760px;
+  }
+
+  p {
+    font: 400 1.6rem "Open Sans", sans-serif;
+    line-height: 3.2rem;
+    color: var(--color-grey);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font: 700 3.2rem "Roboto", sans-serif;
+  }
+}
+
+.button {
+  max-height: 5.0rem;
+  min-height: 4.4rem;
+  max-width: 18.0rem;
+  min-width: 12.0rem;
+  padding: 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--color-grey-light);
+  background-color: var(--color-purple-dark);
+  transition: filter .2s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  filter: brightness(1.1);
 }
 
 @media (min-width: 700px) {
