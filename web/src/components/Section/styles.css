@@ -1,0 +1,57 @@
+section[home-section] {
+  margin-top: 10.6rem;
+}
+
+section[home-section] > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section[home-section] > div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section[home-section] > div div:first-child {
+  margin-right: 30px;
+}
+
+section[home-section] > div div:last-child {
+  margin-left: 30px;
+}
+
+section[home-section] > div div img {
+  width: 100%;
+}
+
+section[home-section] > div div h1 {
+  color: var(--color-purple);
+}
+
+section[home-section] > div div p {
+  margin-top: 2rem;
+}
+
+section[home-section] > div div .button {
+  margin-top: 5rem;
+}
+
+@media (max-width: 1170px) {
+  section[home-section] {
+    margin-top: 8rem;
+  }
+
+  section[home-section] > div {
+    display: flex;
+  }
+
+  section[home-section] > div div h1 {
+    margin-top: 8rem;
+  }
+
+  section[home-section] > div div img {
+    width: 100%;
+    max-width: 600px;
+  }
+}

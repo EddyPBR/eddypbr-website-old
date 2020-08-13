@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FiGithub, FiInstagram, FiLinkedin, FiFacebook } from "react-icons/fi";
 
+import Section from "../../components/Section";
 import "./styles.css";
 
 import man from "../../assets/images/man-analyzing-data.png";
+import ariusHelp from "../../assets/images/arius-help-logo.png";
 
 const Home = () => {
   return (
@@ -58,26 +60,33 @@ const Home = () => {
         </div>
       </header>
 
-      <main id="eddyPBR">
-        <div className="container">
-          <div>
-            <img src={man} alt="Edvaldo Junior" />
-          </div>
-          <div>
-            <h1>Edvaldo Junior</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              facilisis pellentesque pellentesque. Aliquam sagittis congue
-              justo, et tristique dui eleifend tincidunt. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Praesent facilisis pellentesque
-              pellentesque. Aliquam sagittis congue justo.
-            </p>
-            <Link className="button" to="/sobre">Saiba mais</Link>
-          </div>
-        </div>
-      </main>
+      <main>
+        <Section
+          title="Edvaldo Junior"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          facilisis pellentesque pellentesque. Aliquam sagittis congue
+          justo, et tristique dui eleifend tincidunt. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Praesent facilisis pellentesque
+          pellentesque. Aliquam sagittis congue justo."
+          btnLink="/sobre"
+          btnText="Saiba mais"
+          isBlank={false}
+          imageURL={man}
+        />
 
-      
+        <Section
+          title="Árius-Help Startup"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+          dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam
+          pulvinar mattis tortor. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam
+          vitae neque dui. Nullam pulvinar mattis tortor."
+          btnLink="http://ariushelp.com/"
+          btnText="Saiba mais"
+          isBlank={true}
+          imageURL={ariusHelp}
+        />
+      </main>
     </>
   );
 };
