@@ -1,0 +1,117 @@
+.project-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.project-box div:first-child img {
+  width: 90vw;
+  max-width: 70rem;
+  height: 36rem;
+  mask: linear-gradient(
+    145deg,
+    rgba(7, 2, 29, 1) 0%,
+    rgba(7, 2, 29, .5) 70.31%,
+    rgba(7, 2, 29, .25) 100%
+  );
+}
+
+.project-box div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  margin-left: 3rem;
+}
+
+.project-box div:last-child h1 {
+  font-size: 3rem;
+  color: var(--color-green);
+  margin-top: .5rem;
+}
+
+.project-box div:last-child p {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.project-box div:last-child div {
+  margin-top: 4rem;
+  margin-left: -.8rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box div:last-child div a {
+  width: 4.2rem;
+  height: 4.2rem;
+  border: .2rem solid var(--color-green);
+  border-radius: 50%;
+  margin: 0 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-box div:last-child div a:first-child {
+  margin-left: 0;
+}
+
+.project-box div:last-child div a:last-child {
+  margin-right: 0;
+}
+
+.project-box div:last-child div a svg {
+  color: var(--color-green);
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.project-box div:last-child a:hover {
+  filter: brightness(1.4);
+}
+
+@media (max-width: 1170px) {
+  .project-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-box div:first-child img {
+    height: auto;
+  }
+
+  .project-box div:last-child {
+    width: 90vw;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  .project-box div:last-child h1 {
+    font-size: 3rem;
+  }
+
+  .project-box div:last-child p {
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .project-box div:last-child a {
+    margin-top: 0rem;
+  }
+  
+}

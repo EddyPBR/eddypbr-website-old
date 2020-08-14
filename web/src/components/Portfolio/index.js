@@ -13,10 +13,15 @@ const Portfolio = (props) => {
       <div>
         <h1>{title}</h1>
         <p>{text}</p>
-        <a href={link} rel="noopener noreferrer" target="_blank">
+        {
+          link ?
+          <a href={link} rel="noopener noreferrer" target="_blank">
             <span>Ver trabalho</span>
             <FiArrowRightCircle />
-        </a>
+          </a> : 
+          null
+        }
+        {props.children}
       </div>
     </div>
   );

@@ -1,9 +1,16 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import { FiGithub, FiInstagram, FiLinkedin, FiFacebook } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import {
+  FiGithub,
+  FiInstagram,
+  FiLinkedin,
+  FiFacebook,
+  FiArrowRightCircle,
+} from "react-icons/fi";
 
 import Section from "../../components/Section";
 import Portfolio from "../../components/Portfolio";
+import Project from "../../components/Project";
 import "./styles.css";
 
 import man from "../../assets/images/man-analyzing-data.png";
@@ -77,12 +84,32 @@ const Home = () => {
 
         <div className="line grey" />
 
-        <Portfolio 
-          title="Lorem ipsum dollor" 
+        <Portfolio
+          title="Lorem ipsum dollor"
           text="Protótipagem e frontend"
           imageURL="http://wsports.ml/assets/img/header-background.jpg"
-          link="http://wsports.ml/"
-        />
+        >
+          <Link to="/portfolio" className="link aqua">
+            <span>Ver portfolio</span>
+            <FiArrowRightCircle />
+          </Link>
+        </Portfolio>
+
+        <div className="container"></div>
+        <Project
+          title="Project Advisor 3000"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+          dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam
+          pulvinar mattis tortor. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam
+          vitae neque dui. Nullam pulvinar mattis tortor."
+          imageURL="https://raw.githubusercontent.com/EddyPBR/project-advisor-3000/master/frontend/src/assets/main-image.png"
+        >
+          <Link to="/projetos" className="link green">
+            <span>Ver projetos</span>
+            <FiArrowRightCircle />
+          </Link>
+        </Project>
 
         <Section
           title="Árius-Help Startup"
@@ -98,7 +125,6 @@ const Home = () => {
         />
 
         <div className="line yellow" />
-
       </main>
     </>
   );

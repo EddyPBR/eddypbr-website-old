@@ -82,3 +82,41 @@
 .portfolio-box {
   margin-top: 12rem;
 }
+
+.project-box {
+  margin-top: 20rem;
+  margin-bottom: 16rem;
+}
+
+.link {
+  text-decoration: none;
+  transition: filter 0.2s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link span {
+  font: 400 1.8rem "Roboto", sans-serif;
+  color: var(--color-grey);
+}
+
+.link svg {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 2rem;
+}
+
+.link.green {
+  color: var(--color-green);
+}
+
+.link.aqua {
+  color: var(--color-aquagreen);
+}
+
+.link:hover {
+  filter: brightness(1.3);
+}
