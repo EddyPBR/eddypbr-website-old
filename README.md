@@ -43,9 +43,9 @@ I've been studying and developing several projects in frontend and elaborating i
    + [x] Set json for tests with insomnia
    + [ ] Do tests
  + [ ] Frontend
-	 + [ ] Install react-app
-	 + [ ] Prepare the Assets
-	 + [ ] Prepare the routes
+	 + [x] Install react-app
+	 + [x] Prepare the Assets
+	 + [x] Prepare the routes
 	 + [ ] Create the pages
 		 + [ ] Home
 		 + [ ] About
