@@ -84,32 +84,45 @@ const Home = () => {
 
         <div className="line grey" />
 
-        <Portfolio
-          title="Lorem ipsum dollor"
-          text="Protótipagem e frontend"
-          imageURL="http://wsports.ml/assets/img/header-background.jpg"
-        >
-          <Link to="/portfolio" className="link aqua">
-            <span>Ver portfolio</span>
-            <FiArrowRightCircle />
-          </Link>
-        </Portfolio>
+        <section id="abstract-portfolio">
+          <h1>Conheça meu portfólio</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam pulvinar mattis tortor.
+          </p>
 
-        <div className="container"></div>
-        <Project
-          title="Project Advisor 3000"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
-          dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam
-          pulvinar mattis tortor. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam
-          vitae neque dui. Nullam pulvinar mattis tortor."
-          imageURL="https://raw.githubusercontent.com/EddyPBR/project-advisor-3000/master/frontend/src/assets/main-image.png"
-        >
-          <Link to="/projetos" className="link green">
-            <span>Ver projetos</span>
-            <FiArrowRightCircle />
-          </Link>
-        </Project>
+          <Portfolio
+            title="Lorem ipsum dollor"
+            text="Protótipagem e frontend"
+            imageURL="http://wsports.ml/assets/img/header-background.jpg"
+          >
+            <Link to="/portfolio" className="link aqua">
+              <span>Ver portfolio</span>
+              <FiArrowRightCircle />
+            </Link>
+          </Portfolio>
+        </section>
+
+        <section id="abstract-project">
+          <h1>Conheça meus projetos</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam pulvinar mattis tortor.
+          </p>
+
+          <Project
+            title="Project Advisor 3000"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+            dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam
+            pulvinar mattis tortor. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam
+            vitae neque dui. Nullam pulvinar mattis tortor."
+            imageURL="https://raw.githubusercontent.com/EddyPBR/project-advisor-3000/master/frontend/src/assets/main-image.png"
+          >
+            <Link to="/projetos" className="link green">
+              <span>Ver projetos</span>
+              <FiArrowRightCircle />
+            </Link>
+          </Project>
+        </section>
 
         <Section
           title="Árius-Help Startup"

@@ -79,13 +79,52 @@
   margin-top: 12.0rem;
 }
 
-.portfolio-box {
+#abstract-portfolio {
+  width: 90vw;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
   margin-top: 12rem;
 }
 
-.project-box {
+#abstract-portfolio > h1 {
+  color: var(--color-purple);
+}
+
+#abstract-portfolio > p {
+  margin-top: 1rem;
+  max-width: 67rem;
+}
+
+.portfolio-box {
+  margin-top: 8rem;
+}
+
+#abstract-project {
+  width: 90vw;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 auto;
   margin-top: 20rem;
-  margin-bottom: 16rem;
+}
+
+#abstract-project > h1 {
+  color: var(--color-purple);
+}
+
+#abstract-project > p {
+  margin-top: 1rem;
+  max-width: 67rem;
+  text-align: right;
+}
+
+.project-box {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .link {
