@@ -100,6 +100,19 @@ h1, h2, h3, h4, h5, h6 {
   filter: brightness(1.1);
 }
 
+.line {
+  height: 0.3rem;
+  width: 100%;
+}
+
+.line.grey {
+  background: radial-gradient(50% 50% at 50% 50%, #A2AEBE 0%, rgba(187, 84, 158, 0) 100%);
+}
+
+.line.yellow {
+  background: radial-gradient(50% 50% at 50% 50%, #FF9E0D 0%, rgba(187, 84, 158, 0) 100%);
+}
+
 @media (min-width: 700px) {
   :root {
     font-size: 62.5%;
