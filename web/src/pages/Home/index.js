@@ -12,10 +12,12 @@ import Section from "../../components/Section";
 import Portfolio from "../../components/Portfolio";
 import Project from "../../components/Project";
 import ContactBox from "../../components/ContactBox";
+
 import "./styles.css";
 
 import man from "../../assets/images/man-analyzing-data.png";
 import ariusHelp from "../../assets/images/arius-help-logo.png";
+import rocket from "../../assets/images/rocket.png";
 
 const Home = () => {
   return (
@@ -88,7 +90,9 @@ const Home = () => {
         <section id="abstract-portfolio">
           <h1>Conheça meu portfólio</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam pulvinar mattis tortor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+            dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam
+            pulvinar mattis tortor.
           </p>
 
           <Portfolio
@@ -106,7 +110,9 @@ const Home = () => {
         <section id="abstract-project">
           <h1>Conheça meus projetos</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam pulvinar mattis tortor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
+            dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam
+            pulvinar mattis tortor.
           </p>
 
           <Project
@@ -139,6 +145,27 @@ const Home = () => {
           isBlank={true}
           imageURL={ariusHelp}
         />
+
+        <div id="abstract-blog">
+          <div className="container">
+            <div>
+              <ul>
+                <li>Quer ficar atualizado sobre as novas tecnologias?</li>
+                <li>
+                  Aprender com tutoriais sobre como desenvolver funcionalidades
+                  para seus projetos?
+                </li>
+                <li>Dicas de como aprender a programar?</li>
+              </ul>
+              <Link to="/blog" className="button">
+                Acesse o Blog
+              </Link>
+            </div>
+            <div>
+              <img src={rocket} alt="foguete" />
+            </div>
+          </div>
+        </div>
 
         <div className="line yellow" />
       </main>

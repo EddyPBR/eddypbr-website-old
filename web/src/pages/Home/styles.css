@@ -165,6 +165,37 @@
   margin-top: 8rem;
 }
 
+#abstract-blog {
+  margin-top: 8rem;
+}
+
+#abstract-blog .container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#abstract-blog .container div:first-child ul{
+  margin-left: 2rem;
+}
+
+#abstract-blog .container div:first-child ul li{
+  color: var(--color-grey);
+  margin-bottom: 1rem;
+  line-height: 2.8rem;
+  font: 1.8rem 400 "Open Sans", sans-serif;
+}
+
+#abstract-blog .container div:last-child img {
+  height: 30.8rem;
+}
+
+#abstract-blog .button {
+  margin-top: 3rem;
+  background-color: var(--color-yellow);
+  color: var(--color-grey-light);
+  height: 4.6rem;
+}
+
 @media (max-width: 1170px) {
   #abstract-project {
     margin-top: 10rem;
@@ -172,5 +203,29 @@
   
   .contact-box {
     margin-top: 2rem;
+  }
+
+  #abstract-blog .container {
+    flex-wrap: wrap-reverse;
+  }
+
+  #abstract-blog .container div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  #abstract-blog .container div:last-child img {
+    height: 28.8rem;
+    margin-right: 4rem;
+  }
+
+  #abstract-blog .container div:first-child ul{
+    margin-top: 4rem;
+  }
+
+  #abstract-blog .container div:first-child ul li{
+    margin-bottom: 2rem;
   }
 }

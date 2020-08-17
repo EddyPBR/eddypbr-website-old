@@ -57,6 +57,7 @@
 .portfolio-box div:last-child a span {
   font: 400 1.8rem "Roboto", sans-serif;
   color: var(--color-grey);
+  transition: color .2s;
 }
 
 .portfolio-box div:last-child a svg {
@@ -68,6 +69,10 @@
 
 .portfolio-box div:last-child a:hover {
   filter: brightness(1.3);
+}
+
+.portfolio-box div:last-child a:hover span {
+  color: var(--color-blue);
 }
 
 @media (max-width: 1170px) {

@@ -77,7 +77,15 @@
 }
 
 .project-box div:last-child a:hover {
-  filter: brightness(1.4);
+  filter: brightness(1.3);
+}
+
+.project-box div:last-child a span {
+  transition: color .3s;
+}
+
+.project-box div:last-child a:hover span {
+  color: var(--color-green);
 }
 
 @media (max-width: 1170px) {
