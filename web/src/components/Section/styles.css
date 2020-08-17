@@ -23,6 +23,7 @@ section[home-section] > div div:last-child {
 
 section[home-section] > div div img {
   width: 100%;
+  max-width: 55rem;
 }
 
 section[home-section] > div div h1 {
@@ -48,10 +49,5 @@ section[home-section] > div div .button {
 
   section[home-section] > div div h1 {
     margin-top: 8rem;
-  }
-
-  section[home-section] > div div img {
-    width: 100%;
-    max-width: 600px;
   }
 }

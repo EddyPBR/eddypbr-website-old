@@ -11,6 +11,7 @@ import {
 import Section from "../../components/Section";
 import Portfolio from "../../components/Portfolio";
 import Project from "../../components/Project";
+import ContactBox from "../../components/ContactBox";
 import "./styles.css";
 
 import man from "../../assets/images/man-analyzing-data.png";
@@ -123,6 +124,8 @@ const Home = () => {
             </Link>
           </Project>
         </section>
+
+        <ContactBox />
 
         <Section
           title="Árius-Help Startup"

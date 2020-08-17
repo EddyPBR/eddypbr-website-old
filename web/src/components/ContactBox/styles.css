@@ -1,0 +1,41 @@
+.contact-box {
+  max-width: 92rem;
+  width: 90vw;
+  min-height: 12rem;
+  padding: 2rem 4.5rem;
+  background-color: var(--color-purple);
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-box .button {
+  height: 4.4rem;
+  width: 15rem;
+  font-size: 1.6rem;
+  color: var(--color-grey-light);
+  background-color: var(--color-green);
+}
+
+.contact-box p {
+  color: var(--color-grey-light);
+}
+
+@media (max-width: 1170px) {
+  .contact-box {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1.6rem;
+  }
+
+  .contact-box .button {
+    margin-top: 1rem;
+  }
+
+  .contact-box p {
+    text-align: center;
+  }
+}
