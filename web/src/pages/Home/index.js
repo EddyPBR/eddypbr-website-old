@@ -12,6 +12,7 @@ import Section from "../../components/Section";
 import Portfolio from "../../components/Portfolio";
 import Project from "../../components/Project";
 import ContactBox from "../../components/ContactBox";
+import Footer from "../../components/Footer";
 
 import "./styles.css";
 
@@ -169,6 +170,8 @@ const Home = () => {
 
         <div className="line yellow" />
       </main>
+
+      <Footer />
     </>
   );
 };
