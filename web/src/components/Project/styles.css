@@ -3,14 +3,14 @@
   flex-direction: row;
   justify-content: center;
   width: 90vw;
-  max-width: 1170px;
+  max-width: 1070px;
   margin: 0 auto;
 }
 
 .project-box div:first-child img {
   width: 90vw;
-  max-width: 70rem;
-  height: 36rem;
+  max-width: 62rem;
+  height: 34rem;
   mask: linear-gradient(
     145deg,
     rgba(7, 2, 29, 1) 0%,

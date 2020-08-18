@@ -111,10 +111,10 @@ const Carousel = (props) => {
             <Project
               title={content.title}
               text={content.text}
-              image_url={content.imageURL}
+              imageURL={content.imageURL}
               githubLink={content.githubLink}
-              figmaLink={content.githubLink}
-              webLink={content.githubLink}
+              figmaLink={content.figmaLink}
+              webLink={content.webLink}
             />
           )}
         </div>
