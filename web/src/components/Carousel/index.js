@@ -97,8 +97,8 @@ const Carousel = (props) => {
           {props.isPortfolio && (
             <Portfolio
               title={content.title}
-              text={content.text}
-              imageURL={content.imageURL}
+              subtitle={content.subtitle}
+              img_url={content.img_url}
             >
               <Link to="/portfolio" className="link aqua">
                 <span>Ver portfolio</span>
