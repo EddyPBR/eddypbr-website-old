@@ -8,6 +8,7 @@ import {
   FiArrowRightCircle,
 } from "react-icons/fi";
 
+import Navbar from "../../components/Navbar";
 import Section from "../../components/Section";
 import Portfolio from "../../components/Portfolio";
 import Project from "../../components/Project";
@@ -23,6 +24,8 @@ import rocket from "../../assets/images/rocket.png";
 const Home = () => {
   return (
     <>
+      <Navbar />
+
       <header id="introduction">
         <div className="container">
           <img

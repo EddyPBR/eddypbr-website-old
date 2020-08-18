@@ -43,12 +43,13 @@
   background-color: var(--color-purple-dark);
   z-index: 1;
   cursor: pointer;
-  transition: filter .3s;
+  transition: filter 0.3s;
   border-radius: 50%;
-  margin: 0 .4rem;
+  margin: 0 0.4rem;
 }
 
-#carousel .dot:hover, #carousel .dot.active {
+#carousel .dot:hover,
+#carousel .dot.active {
   filter: brightness(1.4);
 }
 
