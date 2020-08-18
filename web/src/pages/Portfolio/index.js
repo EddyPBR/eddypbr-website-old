@@ -24,7 +24,7 @@ const PortfolioPage = () => {
   ];
 
   return (
-    <Carousel portfolios={portfolios} />
+    <Carousel contents={portfolios} isPortfolio />
   );
 };
 

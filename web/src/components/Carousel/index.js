@@ -7,12 +7,13 @@ import {
 } from "react-icons/fi";
 
 import Portfolio from "../../components/Portfolio";
+import Project from "../../components/Project";
 
 import "./styles.css";
 
 const Carousel = (props) => {
-  const portfolios = props.portfolios;
-  const max = portfolios.length - 1;
+  const contents = props.contents;
+  const max = contents.length - 1;
   const min = 0;
   let actual = 0;
 
@@ -21,16 +22,18 @@ const Carousel = (props) => {
     if (toLeft) return value === min ? false : true;
   }
 
-  function animateToRight(actualSlide, nextSlide) {
+  function animateToRight(actualSlide, nextSlide, actualDot, nextDot) {
     actualSlide.classList.add("fadeOutLeft");
     setTimeout(() => {
       actualSlide.classList.remove("active");
       actualSlide.classList.remove("fadeOutLeft");
+      actualDot.classList.remove("active");
     }, 1000);
 
     setTimeout(() => {
       nextSlide.classList.add("active");
       nextSlide.classList.add("fadeInRight");
+      nextDot.classList.add("active");
     }, 600);
 
     setTimeout(() => {
@@ -38,16 +41,18 @@ const Carousel = (props) => {
     }, 2200);
   }
 
-  function animateToLeft(actualSlide, nextSlide) {
+  function animateToLeft(actualSlide, nextSlide, actualDot, nextDot) {
     actualSlide.classList.add("fadeOutRight");
     setTimeout(() => {
       actualSlide.classList.remove("active");
       actualSlide.classList.remove("fadeOutRight");
+      actualDot.classList.remove("active");
     }, 1000);
 
     setTimeout(() => {
       nextSlide.classList.add("active");
       nextSlide.classList.add("fadeInLeft");
+      nextDot.classList.add("active");
     }, 600);
 
     setTimeout(() => {
@@ -61,7 +66,10 @@ const Carousel = (props) => {
     const actualSlide = document.querySelector(`[slide-index="${actual}"]`);
     const nextSlide = document.querySelector(`[slide-index="${actual + 1}"]`);
 
-    animateToRight(actualSlide, nextSlide);
+    const actualDot = document.querySelector(`[slide-index-reference="${actual}"]`);
+    const nextDot = document.querySelector(`[slide-index-reference="${actual + 1}"]`);
+
+    animateToRight(actualSlide, nextSlide, actualDot, nextDot);
     actual += 1;
   }
 
@@ -71,28 +79,44 @@ const Carousel = (props) => {
     const actualSlide = document.querySelector(`[slide-index="${actual}"]`);
     const nextSlide = document.querySelector(`[slide-index="${actual - 1}"]`);
 
-    animateToLeft(actualSlide, nextSlide);
+    const actualDot = document.querySelector(`[slide-index-reference="${actual}"]`);
+    const nextDot = document.querySelector(`[slide-index-reference="${actual - 1}"]`);
+
+    animateToLeft(actualSlide, nextSlide, actualDot, nextDot);
     actual -= 1;
   }
 
   return (
     <div id="carousel">
-      {portfolios.map((portfolio, index) => (
+      {contents.map((content, index) => (
         <div
           className={index === 0 ? "slide active" : "slide"}
           key={index}
           slide-index={index}
         >
-          <Portfolio
-            title={portfolio.title}
-            text={portfolio.text}
-            imageURL={portfolio.imageURL}
-          >
-            <Link to="/portfolio" className="link aqua">
-              <span>Ver portfolio</span>
-              <FiArrowRightCircle />
-            </Link>
-          </Portfolio>
+          {props.isPortfolio && (
+            <Portfolio
+              title={content.title}
+              text={content.text}
+              imageURL={content.imageURL}
+            >
+              <Link to="/portfolio" className="link aqua">
+                <span>Ver portfolio</span>
+                <FiArrowRightCircle />
+              </Link>
+            </Portfolio>
+          )}
+
+          {props.isProject && (
+            <Project
+              title={content.title}
+              text={content.text}
+              image_url={content.imageURL}
+              githubLink={content.githubLink}
+              figmaLink={content.githubLink}
+              webLink={content.githubLink}
+            />
+          )}
         </div>
       ))}
 
@@ -103,6 +127,17 @@ const Carousel = (props) => {
       <div className="arrow right" onClick={changeSliderToRight}>
         <FiChevronRight />
       </div>
+
+      <div className="dots">
+        {contents.map((content, index) => (
+          <span
+            className={index === 0 ? "dot active" : "dot"}
+            key={index}
+            slide-index-reference={index}
+          />
+        ))}
+      </div>
+
     </div>
   );
 };
