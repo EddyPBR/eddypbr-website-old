@@ -47,7 +47,7 @@ I've been studying and developing several projects in frontend and elaborating i
 	 + [x] Prepare the Assets
 	 + [x] Prepare the routes
 	 + [ ] Create the pages
-		 + [ ] Home
+		 + [x] Home
 		 + [ ] About
 		 + [ ] Projects
 		 + [ ] Portfolio
