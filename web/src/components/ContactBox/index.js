@@ -7,7 +7,7 @@ const ContactBox = () => {
   return(
     <div className="contact-box">
       <p>Deseja iniciar um novo projeto, ou desenvolver um site para sua empresa?</p>
-      <Link to="/contact" className="button">Contate-me</Link>
+      <Link to="/contato" className="button">Contate-me</Link>
     </div>
   );
 }

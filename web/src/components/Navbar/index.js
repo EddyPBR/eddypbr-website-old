@@ -7,6 +7,7 @@ import {
   FiPenTool,
   FiPackage,
   FiBook,
+  FiUser,
 } from "react-icons/fi";
 
 import "./styles.css";
@@ -48,6 +49,10 @@ const Navbar = () => {
         <Link to="/">
           <FiHome />
           <span>Home</span>
+        </Link>
+        <Link to="/sobre">
+          <FiUser />
+          <span>Sobre</span>
         </Link>
         <Link to="/portfolio">
           <FiPenTool />

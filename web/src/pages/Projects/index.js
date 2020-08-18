@@ -4,8 +4,8 @@ import Carousel from "../../components/Carousel";
 
 import "./styles.css";
 
-const Projetos = () => {
-  const projetos = [
+const Projects = () => {
+  const projects = [
     {
       title: "Project Advisor 3000",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam pulvinar mattis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam vitae neque dui. Nullam pulvinar mattis tortor.",
@@ -33,8 +33,8 @@ const Projetos = () => {
   ]
 
   return(
-    <Carousel contents={projetos} isProject />
+    <Carousel contents={projects} isProject />
   );
 }
 
-export default Projetos;
+export default Projects;
