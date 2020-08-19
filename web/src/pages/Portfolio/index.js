@@ -4,22 +4,16 @@ import Carousel from "../../components/Carousel";
 
 import "./styles.css";
 
-import api from '../../services/api';
+import api from "../../services/api";
 
 const PortfolioPage = () => {
   const [portfolios, setPortfolios] = useState([]);
 
   useEffect(() => {
-    api
-      .get('portfolio')
-      .then((response) => {
-        setPortfolios(response.data);
-      });
+    api.get("portfolio").then((response) => setPortfolios(response.data));
   }, [setPortfolios]);
 
-  return (
-    <Carousel contents={portfolios} isPortfolio />
-  );
+  return <Carousel contents={portfolios} isPortfolio />;
 };
 
 export default PortfolioPage;

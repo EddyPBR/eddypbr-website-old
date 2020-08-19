@@ -101,8 +101,8 @@ const Home = () => {
 
           <Portfolio
             title="Lorem ipsum dollor"
-            text="Protótipagem e frontend"
-            imageURL="http://wsports.ml/assets/img/header-background.jpg"
+            subtitle="Protótipagem e frontend"
+            img_url="http://wsports.ml/assets/img/header-background.jpg"
           >
             <Link to="/portfolio" className="link aqua">
               <span>Ver portfolio</span>
