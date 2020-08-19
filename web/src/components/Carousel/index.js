@@ -111,7 +111,7 @@ const Carousel = (props) => {
             <Project
               title={content.title}
               text={content.text}
-              img_url={content.imageURL}
+              img_url={content.img_url}
               github_url={content.github_url}
               figma_url={content.figma_url}
               web_url={content.web_url}

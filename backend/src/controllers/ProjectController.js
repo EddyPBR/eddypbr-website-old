@@ -19,7 +19,7 @@ module.exports = {
 
   async update (request, response) {
     const { id } = request.params;
-    const { title, text, link, img_url } = request.body;
+    const { title, text, github_url, figma_url, web_url, img_url } = request.body;
 
     const project = await Project.findByIdAndUpdate(id, {
       title, 
