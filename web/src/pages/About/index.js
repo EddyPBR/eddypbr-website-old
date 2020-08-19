@@ -102,10 +102,10 @@ const About = () => {
           </div>
           <div>
             <h1>Habilidades</h1>
-            <div className="skills-row">
-              <Skill value="85" name="Desenvolvimento Web" />
-              <Skill value="65" name="UI/UX Design" />
-              <Skill value="75" name="Desenvolvimento Mobile" />
+            <div className="skills">
+              <Skill value="92" name="Desenvolvimento Web" />
+              <Skill value="70" name="UI/UX Design" />
+              <Skill value="85" name="Desenvolvimento Mobile" />
               <Skill value="80" name="Marketing Digital" />
               <Skill value="100" name="Café" />
             </div>

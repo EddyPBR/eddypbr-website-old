@@ -75,6 +75,7 @@
 
 #about header .container div:last-child ul li {
   list-style: none;
+  margin-top: .5rem;
 
   display: flex;
   flex-direction: row;
@@ -128,7 +129,7 @@
 }
 
 #about header .container div:last-child ul li a span {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-left: 1rem;
 }
 
@@ -198,20 +199,21 @@
   }
 }
 
-/* content */
-
 #about .content {
   margin: 0 auto;
+  margin-top: 16rem;
   max-width: 117rem;
   width: 90vw;
+
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 #about .content h1 {
   color: var(--color-pink);
+  margin-bottom: 2rem;
 }
 
 #about .row {
@@ -219,4 +221,77 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.row > div:first-child {
+  margin-right: 7rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.skills > div {
+  margin: 0 .2rem;
+}
+
+@media(max-width: 1170px) {
+
+  #about .content {
+    margin-top: 24rem;
+  }
+
+  #about .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .row > div:first-child,
+  .row > div:last-child {
+    margin: 0;
+    width: 100%;
+  }
+
+  #about .content h1 {
+    margin-top: 6rem;
+  }
+
+  .skills {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .skills > .skill {
+    margin-top: 2rem;
+  }
+}
+
+@media(max-width: 520px) {
+  #about .content {
+    margin-top: 32rem;
+  }
+
+  .skills {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 360px) {
+  .skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .skills > .skill {
+    flex-direction: row;
+    width: auto;
+  }
 }

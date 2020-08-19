@@ -15,6 +15,7 @@
   background-image:
       linear-gradient(120deg, transparent 50%, #191238 50%),
       linear-gradient(90deg, #191238 50%, transparent 50%);
+  cursor: crosshair;
 
   display: flex;
   flex-direction: column;
@@ -46,4 +47,6 @@
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   margin-top: .8rem;
+  text-align: center;
+  padding: 0 .5rem;
 }
