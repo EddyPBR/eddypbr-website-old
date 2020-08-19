@@ -9,9 +9,20 @@ const ProjectSchema = new mongoose.Schema({
     type: String,
     require: true
   },
-  link: {
-    type: [String],
-    require: true
+  github_url: {
+    type: String,
+    require: false,
+    default: ""
+  },
+  figma_url: {
+    type: String,
+    require: false,
+    default: ""
+  },
+  web_url: {
+    type: String,
+    require: false,
+    default: ""
   },
   img_url: {
     type: String,

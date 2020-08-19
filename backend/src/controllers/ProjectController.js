@@ -24,7 +24,9 @@ module.exports = {
     const project = await Project.findByIdAndUpdate(id, {
       title, 
       text, 
-      link, 
+      github_url,
+      figma_url,
+      web_url, 
       img_url,
     }, { new: true });
 
