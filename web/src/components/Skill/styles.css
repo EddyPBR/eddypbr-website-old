@@ -1,0 +1,49 @@
+.skill {
+  width: 9.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill .border {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background-color: #FF005C;
+  background-image:
+      linear-gradient(120deg, transparent 50%, #191238 50%),
+      linear-gradient(90deg, #191238 50%, transparent 50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* #A2ECFB
+  #39B4CC */
+}
+
+.skill .circle {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: #07021D;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  color: var(--color-grey-light);
+}
+
+.skill b {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  margin-top: .8rem;
+}
