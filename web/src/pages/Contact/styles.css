@@ -1,0 +1,120 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contact-box {
+  width: 90vw;
+  max-width: 92rem;
+  min-height: 56rem;
+  background: var(--color-background);
+  box-shadow: 6px 6px 12px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contact-box .columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .contact-box .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .contact-box .column .image-container {
+  max-width: 40rem;
+  max-height: 36rem;
+}
+
+#contact .contact-box .column .image-container img {
+  width: 100%;
+}
+
+#contact .contact-box .column span,
+#contact .contact-box .column b {
+  font: 400 1.8rem "Roboto", sans-serif;
+}
+
+#contact .contact-box .column span {
+  margin-top: 1rem;
+  color: var(--color-grey-light);
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+#contact .contact-box .column b {
+  font-weight: bold;
+  color: var(--color-purple-dark);
+}
+
+#contact .contact-box .column form {
+  max-width: 33rem;
+  width: 90vw;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#contact .contact-box .column form input,
+#contact .contact-box .column form textarea {
+  font: 400 1.4rem "Roboto", sans-serif;
+  line-height: 2.4rem;
+  background-color: var(--color-background);
+  border: 1px solid #3f5573;
+  border-radius: 5px;
+  color: var(--color-grey);
+  width: 100%;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 2rem;
+}
+
+#contact .contact-box .column form textarea {
+  min-height: 16rem;
+}
+
+#contact .contact-box .column form input:focus,
+#contact .contact-box .column form textarea:focus {
+  border-color: var(--color-purple-dark);
+}
+
+#contact .contact-box .column form input {
+  height: 4.6rem;
+}
+
+#contact .contact-box .column form button {
+  width: 100%;
+  max-width: none;
+  color: var(--color-grey-light);
+  background-color: var(--color-purple-dark);
+  -webkit-appearance: none;
+}
+
+@media (max-width: 1170px) {
+  #contact .contact-box .columns {
+    flex-direction: column;
+  }
+
+  #contact .contact-box .column form {
+    margin-top: 3rem;
+  }
+
+  #contact .contact-box .column {
+    max-width: 45rem;
+  }
+}
