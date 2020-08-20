@@ -199,6 +199,10 @@
   }
 }
 
+#about .content .row:last-child {
+  margin-top: 6rem;
+}
+
 #about .content {
   margin: 0 auto;
   margin-top: 16rem;
@@ -217,29 +221,44 @@
 }
 
 #about .row {
+  max-width: 1170px;
+  width: 100%;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.row > div:first-child {
+#about .row > div:first-child {
   margin-right: 7rem;
 }
 
-.skills {
+#about .skills {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.skills > div {
+#about .skills > div {
   margin: 0 .2rem;
 }
 
-@media(max-width: 1170px) {
+#about .career-list {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+}
 
+#about .career-list > li {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+@media(max-width: 1170px) {
   #about .content {
     margin-top: 24rem;
   }
@@ -251,8 +270,8 @@
     align-items: flex-start;
   }
 
-  .row > div:first-child,
-  .row > div:last-child {
+  #about .row > div:first-child,
+  #about .row > div:last-child {
     margin: 0;
     width: 100%;
   }
@@ -261,13 +280,17 @@
     margin-top: 6rem;
   }
 
-  .skills {
+  #about .skills {
     width: 100%;
     justify-content: space-between;
   }
 
-  .skills > .skill {
+  #about .skills > .skill {
     margin-top: 2rem;
+  }
+
+  #about .content .row:last-child {
+    margin-top: 3rem;
   }
 }
 
@@ -276,7 +299,7 @@
     margin-top: 32rem;
   }
 
-  .skills {
+  #about .skills {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -284,13 +307,13 @@
 }
 
 @media(max-width: 360px) {
-  .skills {
+  #about .skills {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
 
-  .skills > .skill {
+  #about .skills > .skill {
     flex-direction: row;
     width: auto;
   }

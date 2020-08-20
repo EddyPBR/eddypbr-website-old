@@ -2,6 +2,7 @@ import React from "react";
 import { FiPhone, FiMail, FiLinkedin, FiGithub, FiMap } from "react-icons/fi";
 
 import Skill from "../../components/Skill";
+import Career from "../../components/Career";
 
 import "./styles.css";
 
@@ -111,6 +112,8 @@ const About = () => {
             </div>
           </div>
         </div>
+               
+
       </section>
     </main>
   );
