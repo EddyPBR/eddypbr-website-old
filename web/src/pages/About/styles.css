@@ -220,6 +220,10 @@
   margin-bottom: 2rem;
 }
 
+#about .content p {
+  font-size: 1.6rem;
+}
+
 #about .row {
   max-width: 1170px;
   width: 100%;
@@ -230,8 +234,10 @@
   align-items: flex-start;
 }
 
-#about .row > div:first-child {
-  margin-right: 7rem;
+#about .content .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 
 #about .skills {
@@ -268,6 +274,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  #about .content .row {
+    display: flex;
+    flex-direction: column;
   }
 
   #about .row > div:first-child,
