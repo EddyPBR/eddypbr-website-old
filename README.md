@@ -48,12 +48,11 @@ I've been studying and developing several projects in frontend and elaborating i
 	 + [x] Prepare the routes
 	 + [ ] Create the pages
 		 + [x] Home
-		 + [ ] About
-		 + [ ] Projects
-		 + [ ] Portfolio
-		 + [ ] Contact
+		 + [x] About
+		 + [x] Projects
+		 + [x] Portfolio
+		 + [x] Contact
 		 + [ ] Blog
-		 + [ ] Post
  + [ ] Security Tests
  + [ ] Search and Fixes bugs
  + [ ] Deploy with Netlify
@@ -61,7 +60,12 @@ I've been studying and developing several projects in frontend and elaborating i
  + [ ] end? NEVER
 <br />
 
-##   :memo: License
+## :sparkles: Website prototype
+The prototype of the website was developed on the figma platform, a free and completely online platform for developing interface prototypes. To see the prototype
+just acess this [Link](https://www.figma.com/file/YpMHp1U1DoivFJGnDYLosE/EddyPBR?node-id=150%3A2) and enjoy it.
+<br />
+
+## :memo: License
 
 this project is under mit [MIT license ](LICENSE) for more details
 <br />
