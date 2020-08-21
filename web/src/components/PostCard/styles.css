@@ -1,0 +1,86 @@
+.post-card {
+  width: 90vw;
+  max-width: 34rem;
+  height: 47rem;
+  max-height: 52rem;
+  background: linear-gradient(180deg, #203046 0%, #0D0728 100%);
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: transform .3s, filter .3s, box-shadow .3s;
+}
+
+.post-card:hover {
+  transform: scale(.95);
+  filter: brightness(1.3);
+  box-shadow: 2px 2px 20px 8px rgba(0, 0, 0, 0.25);
+}
+
+.post-card .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.post-card figure {
+  max-width: 30rem;
+  width: 100%;
+  max-height: 20rem;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.post-card figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.post-card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.post-card .content h1 {
+  color: var(--color-grey);
+  font: 700 1.6rem "Roboto", sans-serif;
+  line-height: 2.2rem;
+}
+
+.post-card .content p {
+  color: var(--color-grey-dark);
+  font: 400 1.4rem "Roboto", sans-serif;
+  line-height: 2.2rem;
+  margin-top: 1.6rem;
+}
+
+.post-card .details {
+  margin-top: .8rem;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.post-card .details span {
+  color: var(--color-grey-dark);
+  font: 400 1.2rem "Roboto", sans-serif;
+}
+
+.post-card .details b {
+  color: var(--color-grey);
+  font: 700 1.2rem "Roboto", sans-serif;
+  margin-left: .5rem
+}
+
+.post-card .details span:last-child::before {
+  content: "-";
+  margin: 0 .8rem;
+}

@@ -1,0 +1,61 @@
+#blog {
+  width: 90vw;
+  max-width: 117rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+#blog header{
+  margin-bottom: 12rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-items: flex-start;
+}
+
+#blog header > div {
+  max-width: 57rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+}
+
+#blog header h1 {
+  color: var(--color-yellow);
+  margin-bottom: 2rem;
+}
+
+#blog header p {
+  color: var(--color-yellow);
+}
+
+#blog section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#blog section > div {
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  gap: 70;
+}
+
+#blog section .button {
+  max-width: 23rem;
+  max-height: 6rem;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-yellow);
+  color: #FFF;
+}
+
+#blog section .button:hover {
+  filter: brightness(.8);
+}
