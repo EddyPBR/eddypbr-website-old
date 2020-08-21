@@ -4,12 +4,9 @@
   min-height: 100vh;
   margin: 0 auto;
   margin-top: 12rem;
-  margin-bottom: 12rem;
 }
 
 #blog header{
-  margin-bottom: 12rem;
-
   display: flex;
   flex-direction: row;
   justify-items: flex-start;
@@ -43,8 +40,10 @@
 
 #blog section > div {
   display: grid;
-  grid-auto-columns: 1fr 1fr 1fr;
-  gap: 70;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 7rem;
+  row-gap: 7rem;
+  margin: 12rem;
 }
 
 #blog section .button {
@@ -58,4 +57,42 @@
 
 #blog section .button:hover {
   filter: brightness(.8);
+}
+
+#blog .line {
+  margin-top: 16rem;
+}
+
+@media (max-width: 1170px){
+  #blog section > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7rem;
+    row-gap: 7rem;
+    margin: 12rem;
+  }
+}
+
+@media (max-width: 840px){
+  #blog section > div {
+    column-gap: 4rem;
+    row-gap: 4rem;
+  }
+}
+
+@media (max-width: 750px){
+  #blog section > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+  }
+
+  #blog section > div .post-card {
+    margin: 1.6rem 0;
+  }
+
+  #blog {
+    margin-top: 6rem;
+  }
 }

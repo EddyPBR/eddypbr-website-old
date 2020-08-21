@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import PostCard from "../../components/PostCard";
 
 import "./styles.css";
 
+import api from "../../services/api";
+
 const Blog = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    api.get("posts").then((response) => setPosts(response.data));
+  }, [setPosts]);
+
   return(
     <>
       <Navbar />
@@ -20,10 +29,23 @@ const Blog = () => {
 
         <section>
           <div>
+            {posts.map( (post) => (
+              <PostCard 
+                key={post._id}
+                title={post.title}
+                author={post.author}
+                description={post.description}
+                img_url={post.img_url}
+                post_url={post.post_url}
+                createdAt={post.createdAt}
+              />
+            ))}
           </div>
 
           <button className="button">Carregar mais posts</button>
         </section>
+
+        <div className="line yellow" />
       </main>
 
       <Footer />

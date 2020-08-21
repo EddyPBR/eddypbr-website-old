@@ -26,7 +26,7 @@ const PostCard = (props) => {
         </figure>
 
         <div className="content">
-          <h1>Titulo</h1>
+          <h1>{title}</h1>
           <div className="details">
             <span>Autor: </span>
             <b>{author}</b>
