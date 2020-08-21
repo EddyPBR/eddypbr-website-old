@@ -4,6 +4,7 @@
 
 This is my website/blog project to promote my work, write reviews, offer tips and demonstrate the results of some studies, follow me there and we will evolve together!
 <br />
+<br />
 
 ## :computer: Technologies Used
 
@@ -25,6 +26,7 @@ this project is still under development but i am looking forward to finishing it
 
 I've been studying and developing several projects in frontend and elaborating interfaces with figma. Recently I have been studying more about NodeJS, React, and ReactNative and I realized that these technologies make a lot of sense together so this project is a way to put into practice part of what I learned from these technologies.
 <br />
+<br />
 
 ## :heavy_check_mark: Phases
 
@@ -33,30 +35,31 @@ I've been studying and developing several projects in frontend and elaborating i
      + [x] Prepare the backend
      + [x] Define routes
      + [x] Create models
-    	 + [x] Post model
-    	 + [x] Project model
-    	 + [x] Portfolio model
+       + [x] Post model
+       + [x] Project model
+       + [x] Portfolio model
    + [x] Create controllers
      + [x] Post controller
      + [x] Project controller
      + [x] Portfolio controller
    + [x] Set json for tests with insomnia
    + [ ] Do tests
- + [ ] Frontend
-	 + [x] Install react-app
-	 + [x] Prepare the Assets
-	 + [x] Prepare the routes
-	 + [ ] Create the pages
-		 + [x] Home
-		 + [x] About
-		 + [x] Projects
-		 + [x] Portfolio
-		 + [x] Contact
-		 + [ ] Blog
+ + [x] Frontend
+   + [x] Install react-app
+   + [x] Prepare the Assets
+   + [x] Prepare the routes
+   + [x] Create the pages
+     + [x] Home
+     + [x] About
+     + [x] Projects
+     + [x] Portfolio
+     + [x] Contact
+     + [x] Blog
+ + [ ] Create a encrypted key
  + [ ] Security Tests
  + [ ] Search and Fixes bugs
  + [ ] Deploy with Netlify
- + [ ] Host API with Umbler
+ + [ ] Host API in Umbler
  + [ ] end? NEVER
 <br />
 
