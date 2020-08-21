@@ -1,0 +1,44 @@
+#back-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 20;
+  cursor: pointer;
+  width: 7rem;
+  
+  left: 7rem;
+  top: 7rem;
+  position: absolute;
+}
+  
+#back-link a {
+  color: var(--color-blue);
+  text-decoration: none;
+  transition: filter .2s, text-decoration .2s;
+  font: 700 1.6rem "Roboto", sans-serif;
+}
+
+#back-link:hover {
+  filter: brightness(1.2);
+  text-decoration: underline;
+}
+
+#back-link svg {
+  height: 2rem;
+  width: 2rem;
+  color: var(--color-blue);
+}
+
+#back-link:hover svg {
+  animation: arrowAnimate 1s ease-in-out alternate infinite;
+}
+
+@keyframes arrowAnimate {
+  from {
+    transform: translateX(0rem);
+  }
+
+  to {
+    transform: translateX(-.5rem);
+  }
+}

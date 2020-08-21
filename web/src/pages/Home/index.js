@@ -126,7 +126,7 @@ const Home = () => {
             pulvinar mattis tortor. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. In quis dapibus dui, at lobortis lacus. Etiam
             vitae neque dui. Nullam pulvinar mattis tortor."
-            imageURL="https://raw.githubusercontent.com/EddyPBR/project-advisor-3000/master/frontend/src/assets/main-image.png"
+            img_url="https://raw.githubusercontent.com/EddyPBR/project-advisor-3000/master/frontend/src/assets/main-image.png"
           >
             <Link to="/projetos" className="link green">
               <span>Ver projetos</span>

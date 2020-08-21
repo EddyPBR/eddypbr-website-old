@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Carousel from "../../components/Carousel";
+import BackLink from "../../components/BackLink";
 
 import "./styles.css";
 
@@ -13,7 +14,13 @@ const Projects = () => {
     api.get("/projects").then((response) => setProjects(response.data));
   }, [setProjects]);
 
-  return <Carousel contents={projects} isProject />;
+  return (
+    <>
+      <BackLink />
+      <Carousel contents={projects} isProject />
+    </>
+    
+  );
 };
 
 export default Projects;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Carousel from "../../components/Carousel";
+import BackLink from "../../components/BackLink";
 
 import "./styles.css";
 
@@ -13,7 +14,12 @@ const PortfolioPage = () => {
     api.get("portfolio").then((response) => setPortfolios(response.data));
   }, [setPortfolios]);
 
-  return <Carousel contents={portfolios} isPortfolio />;
+  return (
+    <>
+      <BackLink />
+      <Carousel contents={portfolios} isPortfolio />
+    </>
+  ); 
 };
 
 export default PortfolioPage;
